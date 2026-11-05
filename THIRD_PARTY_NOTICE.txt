@@ -1,0 +1,29 @@
+Third-party libraries in this directory
+=======================================
+
+  Prawn 2.5.0      https://github.com/prawnpdf/prawn      ./LICENSE.txt
+  pdf-core 0.10.0  https://github.com/prawnpdf/pdf-core   ./pdf/LICENSE.txt
+  ttfunk 1.8.0     https://github.com/prawnpdf/ttfunk     ./ttfunk/LICENSE.txt
+
+The original distributions are available at the addresses above and at
+https://rubygems.org.
+The source code as modified for SHK 3skeng is available at
+https://github.com/soundglider/3skeng-prawn
+
+Each library may be used under its LICENSE conditions, GPLv2 or GPLv3. SHK 3skeng
+uses them under the LICENSE conditions, not under the GPL. The COPYING and GPL
+files are upstream's and are kept unchanged.
+
+Modifications made by SHK Engineering and Consulting GmbH & Co KG
+-----------------------------------------------------------------
+
+- All modules are placed in the Tsk3 namespace (Tsk3::Prawn, Tsk3::PDF, Tsk3::TTFunk).
+- Internal load statements use Sketchup.require.
+- BASEDIR and DATADIR point to this directory layout.
+- Upstream sample fonts are removed. The Adobe AFM files and MustRead.html are kept.
+- Comments and one error message contain small text corrections.
+
+Installed 3skeng packages may contain these Ruby sources in encrypted form (.rbe).
+
+prawn/fonts/*.afm are Adobe Core 14 font metrics under the terms in
+prawn/fonts/MustRead.html.
